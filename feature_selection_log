@@ -1,0 +1,93 @@
+Removing outliers...
+Initial samples: (6463, 12)
+Samples after outlier removal: (6457, 12)
+
+----- Algorithm used: Variance Threshold:
+(6457, 6)
+Features removed: 6
+Column importance scores:
+                                0
+type                     0.185687
+fixed acidity            1.677575
+volatile acidity         0.027109
+citric acid              0.021105
+residual sugar          22.633760
+chlorides                0.001231
+free sulfur dioxide    315.076829
+total sulfur dioxide  3191.727262
+density                  0.000009
+pH                       0.025814
+sulphates                0.022181
+alcohol                  1.424060
+
+----- Algorithm used: Select K Best
+(6457, 10)
+Features removed: 2
+Column importance scores:
+                             0
+type                  0.009941
+fixed acidity         0.008853
+volatile acidity      0.054811
+citric acid           0.057795
+residual sugar        0.065393
+chlorides             0.070275
+free sulfur dioxide   0.032493
+total sulfur dioxide  0.065525
+density               0.149122
+pH                    0.019779
+sulphates             0.026917
+alcohol               0.164783
+
+----- Algorithm used: Select Percentile
+(6457, 10)
+Features removed: 2
+Column importance scores:
+                             0
+type                  0.005626
+fixed acidity         0.025718
+volatile acidity      0.046429
+citric acid           0.039386
+residual sugar        0.072374
+chlorides             0.069745
+free sulfur dioxide   0.027566
+total sulfur dioxide  0.064473
+density               0.159733
+pH                    0.011225
+sulphates             0.027844
+alcohol               0.154477
+
+----- Algorithm used: Select FDR
+(6457, 11)
+Features removed: 1
+Column importance scores:
+                                0
+type                    93.769315
+fixed acidity           36.807582
+volatile acidity       491.739976
+citric acid             47.129496
+residual sugar           7.782509
+chlorides              271.883537
+free sulfur dioxide     18.169697
+total sulfur dioxide    10.801896
+density                659.838851
+pH                       2.164480
+sulphates                9.593921
+alcohol               1592.147468
+
+----- Algorithm used: RFECV - XGBRF
+(6457, 9)
+Optimal number of features:   9
+
+----- Model Selection - Estimator used: LassoLarsIC
+(6457, 12)
+
+----- Model Selection - Estimator used: XGBRF
+(6457, 3)
+
+----- Sequential Model Selection - Estimator used: LassoLarsIC
+(6457, 8)
+
+----- Sequential Model Selection - Estimator used: XGBRF
+(6457, 8)
+
+Process finished with exit code 0
