@@ -1,5 +1,5 @@
 # Feature-Selection-Algorithms---Wine-Quality
-In this project, I used Feature Selection algorithms to find the importance of wine features.
+In this project, I used Feature Selection algorithms to find the importance of wine features. Specifically, the dataset contains 11 columns that define wine quality. The goal of this project is to analize multiple wine samples and find the relationships between the columns that define the quality of the wine. Also, I've implemented a regressor with Keras, which tries to predict the quality of a given sample.
 
 # Dataset
 The dataset i used can be found here: https://www.kaggle.com/rajyellow46/wine-quality
