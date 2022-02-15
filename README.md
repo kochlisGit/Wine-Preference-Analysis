@@ -54,3 +54,8 @@ The entire log can be found here: https://github.com/kochlisGit/Feature-Selectio
 ![](https://github.com/kochlisGit/Feature-Selection-Algorithms---Wine-Quality/blob/main/plots/select_k_best.png)
 
 ![](https://github.com/kochlisGit/Feature-Selection-Algorithms---Wine-Quality/blob/main/plots/select_percentile.png)
+
+# Future Work
+1. Add Partial Dependence Plots
+2. Try different regression models (XG-Boost with Random Forest Regression Trees, Support Vector Machines for Regression with Kernels, etc.)
+3. Add an Interactive Dashboard.
