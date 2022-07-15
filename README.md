@@ -6,7 +6,7 @@ and assures quality for the wine market. Quality evaluation is often part of the
 and can be used to improve wine making and to stratify wines such as premium brands (useful for setting prices).
 Such model is useful to support the oenologist wine tasting evaluations, improve and speed-up the wine production.
 
--------------------------
+# Features
 
 According to the oenology theory, the quality of wine is dependent on
 **Climate & Weather, Temperature and Sunlight, Growing Practices and Winemaking Practices**.
