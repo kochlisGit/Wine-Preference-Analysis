@@ -1,61 +1,23 @@
-# Feature-Selection-Algorithms---Wine-Quality
-In this project, I used Feature Selection algorithms to find the importance of wine features. Specifically, the dataset contains 11 columns that define wine quality. The goal of this project is to analize multiple wine samples and find the relationships between the columns that define the quality of the wine. Also, I've implemented a regressor with Keras, which tries to predict the quality of a given sample.
+# Wine Preference Analysis
 
-# Dataset
-The dataset i used can be found here: https://www.kaggle.com/rajyellow46/wine-quality
+The purpose of this work is the modeling of the wine preferences by physicochemical properties.
+Wine quality is a key element within this context. Certification prevents the illegal adulteration of wines
+and assures quality for the wine market. Quality evaluation is often part of the certification process 
+and can be used to improve wine making and to stratify wines such as premium brands (useful for setting prices).
+Such model is useful to support the oenologist wine tasting evaluations, improve and speed-up the wine production.
 
-It contains 6500 measurements of the features of wine and their quality score. Specifically, It contains the following columns:
+-------------------------
 
-1. Type
-2. Fixed Acidity
-3. Volatile Aciditi
-4. Citric Acid
-5. Residual Sugar
-6. Chlorides
-7. Free Sulfur Dioxide
-8. Total Sulfur Dioxide
-9. Density
-10. pH
-11. Sulphates
-12. Alcohol
-13. Quality Score
-
-# Regressor Construction
-First, I built a regressor, in order try and predict the score of a wine, based on its measurements. The Regressor that i have used is a Deep Neural Network with [128, 128, 128] hidden units. Before I train the regressor, I used UMAP + HDBSCAN method to remove any outlying measurements. Then, I scaled the data to range (0, 1) to make the training faster and trained the regressor model.
-
-# Regression Results
-After some minutes of training, my model managed to score 1 - 0.0956 or **90% accuracy**. The error 0.0956 was measured using Mean Absolute Percentage Error function.
-Here is the results of the first 5 validation samples:
-
-| Prediction | Actual |
-| ---------- | ------ |
-| 5.7370844  | 5.0  |
-| 5.6009750  | 6.0  |
-| 5.7100430  | 4.0  |
-| 5.9350880  | 6.0  |
-| 5.7370844  | 6.99 |
-
-The validation log can be found here: https://github.com/kochlisGit/Feature-Selection-Algorithms---Wine-Quality/blob/main/Regression_Log 
-
-The log contains 650 tested samples.
-
-# Feature Importance
-
-To improve the regressor accuracy it is impotant to understand what are the most important features in the dataset. Maybe the dataset contains unecessary features that act as **"noise"** for out model. Different algorithms were used to compute feature importance:
-
-The entire log can be found here: https://github.com/kochlisGit/Feature-Selection-Algorithms---Wine-Quality/blob/main/feature_selection_log
-
-![](https://github.com/kochlisGit/Feature-Selection-Algorithms---Wine-Quality/blob/main/plots/RFECV%20-%20XGBRF.png)
-
-![](https://github.com/kochlisGit/Feature-Selection-Algorithms---Wine-Quality/blob/main/plots/select_fdr.png)
-
-![](https://github.com/kochlisGit/Feature-Selection-Algorithms---Wine-Quality/blob/main/plots/variance_threshold.png)
-
-![](https://github.com/kochlisGit/Feature-Selection-Algorithms---Wine-Quality/blob/main/plots/select_k_best.png)
-
-![](https://github.com/kochlisGit/Feature-Selection-Algorithms---Wine-Quality/blob/main/plots/select_percentile.png)
-
-# Future Work
-1. Add Partial Dependence Plots
-2. Try different regression models (XG-Boost with Random Forest Regression Trees, Support Vector Machines for Regression with Kernels, etc.)
-3. Add an Interactive Dashboard.
+The dataset that was used in this work includes white and red wine samples, which are described by
+12 columns.  According to the oenology theory, a wine can be described by:
+1. Type (*Red, White, Rosé, Sparkling and Fortified (Dessert)*): The different types of wine.
+2. Fixed Acidity (*1000 mg/L - 4000 mg/L*): Organic acids of wines whose volatilities are so low that cannot be separated from wine by distillation
+3. Citric Acid (*< 500 mg/L*): Citric acid is used as supplement during the fermentation process to boost the acidity of wine
+4. Residual Sugar (*> 35 mg/L*): Natural grape sugars leftover in a wine after the alcoholic fermentation
+5. Chlorides (*< 606 mg/L*): A major contributor to saltiness in wine
+6. Free sulfur Dioxide (*< 350 mg/L*): A wine additive that preserves wine's freshness and fruit characters by virtue of antioxidant, antimicrobial and anti-enzymatic properties
+7. Total Sulfur Dioxide (*< 350 mg/L*): The portion of $SO_{2}$ that is free in the wine plus the portion that is bound to other chemicals such as aldehydes, pigments, or sugars
+8. Density (*1080 - 1090 mg/*$cm^3$): The density of the wine
+9. pH (*2.5 pH - 4.5 pH*): A scale used to specify the acidity of the wine
+10. Sulphites (*5 mg/l - 2000 mg/L*): chemical by-products created during the fermentation process, also used in food preservation
+11. Alcohol (*5.5% - 25%*): The total concentration of alchohol 
