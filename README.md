@@ -50,4 +50,6 @@ A Neural Network was built with 0.41 mean absolute error, after it was tuned usi
 | 6              | 6                | 0     |
 | 5              | 5                | 0     |
 
+More predictions can be found on the csv file: https://github.com/kochlisGit/Wine-Quality-Analysis/blob/main/predictions.csv
+
 # Interpretability
