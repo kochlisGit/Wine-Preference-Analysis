@@ -26,3 +26,28 @@ theory, a wine can be described by the columns below:
 10. **pH** (*2.5 pH - 4.5 pH*): A scale used to specify the acidity of the wine
 11. **Sulphites** (*5 mg/l - 2000 mg/L*): chemical by-products created during the fermentation process, also used in food preservation
 12. **Alcohol** (*5.5% - 25%*): The total concentration of alchohol 
+
+# Quality
+
+The quality of each sample is a numerical value between 0.0 and 10.0. The quality is dependent by the values of each of the features that are decrribed above. The goal of this project is:
+1. Build a Regression model to accurately predict the quality score of a given wine sample, based on its physicochemical properties.
+2. Analyze the regression model and interpret its decision making system.
+
+# Regression Accuracy
+
+A Neural Network was built with 0.41 mean absolute error, after it was tuned using `Optuna` package. The first 10 predictions are shown in the table below.
+
+| Target Quality | Model Prediction | ERROR |
+|----------------|------------------|-------|
+| 6              | 6                | 0     |
+| 6              | 6                | 0     |
+| 5              | 4                | 1     |
+| 6              | 5                | 1     |
+| 5              | 5                | 0     |
+| 7              | 6                | 1     |
+| 5              | 5                | 0     |
+| 4              | 5                | 1     |
+| 6              | 6                | 0     |
+| 5              | 5                | 0     |
+
+# Interpretability
