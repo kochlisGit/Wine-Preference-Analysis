@@ -33,9 +33,15 @@ The quality of each sample is a numerical value between 0.0 and 10.0. The qualit
 1. Build a Regression model to accurately predict the quality score of a given wine sample, based on its physicochemical properties.
 2. Analyze the regression model and interpret its decision making system.
 
-# Regression Accuracy
+# Regression Model
 
-A Neural Network was built with 0.41 mean absolute error, after it was tuned using `Optuna` package. The first 10 predictions are shown in the table below.
+A Neural Network was built with 0.41 mean absolute error, after it was tuned using `Optuna` package. More specifically, a
+neural network with 3 Dense Layers (200, 245, 245) and 1 output unit was built. The `GELU` activation function was added at
+the output of each hidden layer. The model was trained using a Google's `Yogi` optimizer, which is an alternative version of `Adam`
+optimizer. Finally, both the **Mean Absolute Error (MAE) & (Mean Absolute Percentage Error)** have been used in order to monitor the 
+validation loss of the model.
+
+The first 10 predictions are shown in the table below.
 
 | Target Quality | Model Prediction | ERROR |
 |----------------|------------------|-------|
@@ -53,3 +59,5 @@ A Neural Network was built with 0.41 mean absolute error, after it was tuned usi
 More predictions can be found on the csv file: https://github.com/kochlisGit/Wine-Quality-Analysis/blob/main/predictions.csv
 
 # Interpretability
+
+
