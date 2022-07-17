@@ -77,8 +77,12 @@ The SHAP (SHapley Additive exPlanations) approach was used for the feature impor
 
 --------------------------------------
 
-Most of the results of this analysis confirm the oenological theory. For example, **the quality of the wine is not affected by the type of the wine (White/Red)**.
-Additionally, **an increase in the alcohol, which is one of the most important factors of wine production tends to result in a higher quality wine**. Also, the rankings are different within each wine type. For instance, the citric acid and residual sugar levels are more important in white wine, where the equilibrium between the freshness and sweet taste is more appreciated. Moreover, the volatile acidity has a negative impact on both white and red types of wine, since higher volatile acidity values could indicate wine spoilage. The most intriguing result is the high importance of sulfites. In the red wine, the suplhates seems to be 2 times more important than in white wine. Oenologically this result could be very interesting. An increase in sulfites might be related to the fermenting nutrition, which is very important to improve the wine aroma. Additionally, given that a winemaker has very little control over the wine’s storage conditions from the time the wine leaves the winery until it is consumed, it is little wonder that SO2 is so widely used to help guarantee that the bottle of wine you open will be fresh and clean, and taste as the winemaker intended.
+Most of the results of this analysis confirm the oenological theory. For example:
+* The quality of the wine is not affected by the type of the wine (White/Red)
+* An increase in the alcohol, which is one of the most important factors of wine production tends to result in a higher quality wine
+* The rankings are different within each wine type. For instance, the citric acid and residual sugar levels are more important in white wine, where the equilibrium between the freshness and sweet taste is more appreciated. 
+* Volatile Acidity has a negative impact on both white and red types of wine, since higher volatile acidity values could indicate wine spoilage. 
+* In the red wine, the suplhates seems to be 2 times more important than in white wine and it is very important in both types of wine. An increase in sulfites might be related to the fermenting nutrition, which is very important to improve the wine aroma. Additionally, given that a winemaker has very little control over the wine’s storage conditions from the time the wine leaves the winery until it is consumed, it is little wonder that SO2 is so widely used to help guarantee that the bottle of wine you open will be fresh and clean, and taste as the winemaker intended.
 
 
 
