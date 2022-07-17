@@ -60,4 +60,9 @@ More predictions can be found on the csv file: https://github.com/kochlisGit/Win
 
 # Interpretability
 
+An XGBoost regressor model was trained in order to better understand the physicochemical properties of the both white and red wine.
+The SHAP (SHapley Additive exPlanations) approach was used for the feature importance analysis, which is a game theoretic approach of explaining the output of the regressor model.
 
+![Importance](https://github.com/kochlisGit/Wine-Quality-Analysis/blob/main/screenshots/physicochemical-beeswarm.png)
+
+![Bee-Swarm](https://github.com/kochlisGit/Wine-Quality-Analysis/blob/main/screenshots/physicochemical-importance.png)
