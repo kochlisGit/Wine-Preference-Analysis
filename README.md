@@ -88,5 +88,10 @@ Most of the results of this analysis confirm the oenological theory. For example
 * Volatile Acidity has a negative impact on both white and red types of wine, since higher volatile acidity values could indicate wine spoilage. Then the volatile acidity is very high, winemakers usually use Reverse Osmosis (RO) to lower the acetic acid concentration
 * In the red wine, the suplhates seems to be 2 times more important than in white wine and it is very important in both types of wine. An increase in sulfites might be related to the fermenting nutrition, which is very important to improve the wine aroma. Additionally, given that a winemaker has very little control over the wine’s storage conditions from the time the wine leaves the winery until it is consumed, it is little wonder that SO2 is so widely used to help guarantee that the bottle of wine you open will be fresh and clean, and taste as the winemaker intended
 
+# DEMO
 
+![Demo-Screenshot](https://github.com/kochlisGit/Wine-Preference-Analysis/blob/main/screenshots/demo.png)
+
+Demo Link:
+https://colab.research.google.com/drive/174KThfdovgG-9Ypvm40vV1xbvwy-JqsQ
 
