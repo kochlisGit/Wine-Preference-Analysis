@@ -65,6 +65,10 @@ The SHAP (SHapley Additive exPlanations) approach was used for the feature impor
 
 # Feature Importance
 
+![wine-types](https://github.com/kochlisGit/Wine-Quality-Analysis/blob/main/screenshots/correlations.png)
+
+---------------------------------------
+
 ![wine-types](https://github.com/kochlisGit/Wine-Quality-Analysis/blob/main/screenshots/wine-types-qualities.png)
 
 ---------------------------------------
