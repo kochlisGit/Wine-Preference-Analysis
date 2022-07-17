@@ -75,7 +75,7 @@ The SHAP (SHapley Additive exPlanations) approach was used for the feature impor
 
 ![Importance](https://github.com/kochlisGit/Wine-Quality-Analysis/blob/main/screenshots/physicochemical-beeswarm.png)
 
---------------------------------------
+# Conclusions
 
 Most of the results of this analysis confirm the oenological theory. For example:
 * The quality of the wine is not affected by the type of the wine (White/Red)
