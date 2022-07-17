@@ -24,7 +24,7 @@ theory, a wine can be described by the columns below:
 8. **Total Sulfur Dioxide** (*< 350 mg/L*): The portion of $SO_{2}$ that is free in the wine plus the portion that is bound to other chemicals such as aldehydes, pigments, or sugars
 9. **Density** (*1080 - 1090 mg/*$cm^3$): The density of the wine
 10. **pH** (*2.5 pH - 4.5 pH*): A scale used to specify the acidity of the wine
-11. **Sulphites** (*5 mg/l - 2000 mg/L*): chemical by-products created during the fermentation process, also used in food preservation
+11. **Sulfites** (*5 mg/l - 2000 mg/L*): chemical by-products created during the fermentation process, also used in food preservation
 12. **Alcohol** (*5.5% - 25%*): The total concentration of alchohol 
 
 # Quality
@@ -63,6 +63,23 @@ More predictions can be found on the csv file: https://github.com/kochlisGit/Win
 An XGBoost regressor model was trained in order to better understand the physicochemical properties of the both white and red wine.
 The SHAP (SHapley Additive exPlanations) approach was used for the feature importance analysis, which is a game theoretic approach of explaining the output of the regressor model.
 
-![Importance](https://github.com/kochlisGit/Wine-Quality-Analysis/blob/main/screenshots/physicochemical-beeswarm.png)
+# Feature Importance
+
+![wine-types](https://github.com/kochlisGit/Wine-Quality-Analysis/blob/main/screenshots/wine-types-qualities.png)
+
+---------------------------------------
 
 ![Bee-Swarm](https://github.com/kochlisGit/Wine-Quality-Analysis/blob/main/screenshots/physicochemical-importance.png)
+
+---------------------------------------
+
+![Importance](https://github.com/kochlisGit/Wine-Quality-Analysis/blob/main/screenshots/physicochemical-beeswarm.png)
+
+--------------------------------------
+
+Most of the results of this analysis confirm the oenological theory. For example, **the quality of the wine is not affected by the type of the wine (White/Red)**.
+Additionally, **an increase in the alcohol, which is one of the most important factors of wine production tends to result in a higher quality wine**. Also, the rankings are different within each wine type. For instance, the citric acid and residual sugar levels are more important in white wine, where the equilibrium between the freshness and sweet taste is more appreciated. Moreover, the volatile acidity has a negative impact on both white and red types of wine, since higher volatile acidity values could indicate wine spoilage. The most intriguing result is the high importance of sulfites. In the red wine, the suplhates seems to be 2 times more important than in white wine. Oenologically this result could be very interesting. An increase in sulfites might be related to the fermenting nutrition, which is very important to improve the wine aroma. Additionally, given that a winemaker has very little control over the wine’s storage conditions from the time the wine leaves the winery until it is consumed, it is little wonder that SO2 is so widely used to help guarantee that the bottle of wine you open will be fresh and clean, and taste as the winemaker intended.
+
+
+
+
